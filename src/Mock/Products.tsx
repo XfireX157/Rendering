@@ -49,9 +49,9 @@ export const ProductsRender = [
     {
         id: 6,
         img: <BsDoorClosed/>,
-        name: "Porta3",
+        name: "Porta4",
         category: {
-            id: 3,
+            id: 4,
             label: "Doors"
         }
     },

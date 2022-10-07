@@ -4,6 +4,10 @@ interface IButton {
     active?: boolean | number | null
 }
 
+export const BoxIcon = styled.div`
+    
+`
+
 export const Container = styled.div<IButton>`
     position: fixed;
     bottom: 90px;

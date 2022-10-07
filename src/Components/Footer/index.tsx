@@ -4,7 +4,7 @@ import Products from './Products'
 import { useState } from 'react'
 import { ProductsRender } from 'Mock/Products'
 
-const Category = [
+export const Category = [
     {
         id: 1,
         icon: <BsDoorClosed/>
@@ -32,7 +32,7 @@ export const Footer = () => {
 
     const [active, setActive] = useState<boolean | number | null>(null)
 
-    console.log(active)
+
     const filtered = (item: ICategory) => {
         if(active !== item.id){
             setActive(item.id)
@@ -52,10 +52,10 @@ export const Footer = () => {
             <C.Box>
                 {Category.map((item) => (
                     <C.Button
-                    key={item.id}
-                    type='button'
-                    active={active === item.id ? true : false}
-                    onClick={() => filtered(item)}
+                        key={item.id}
+                        type='button'
+                        active={active === item.id ? true : false}
+                        onClick={() => filtered(item)}
                     >
                         {item.icon}
                     </C.Button>

@@ -2,8 +2,7 @@ import { IButton } from "Types/IButton"
 
 const Button = ({children, ...rest}: IButton) => {
     return(
-        <button 
-         
+        <button
             {...rest}
         >{children}</button>
     )
