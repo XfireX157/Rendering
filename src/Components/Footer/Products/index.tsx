@@ -1,6 +1,5 @@
 import * as C from './style'
 import {ProductsRender} from 'Mock/Products'
-import Button from 'Components/Button'
 import { useState } from 'react'
 import { Category } from '..'
 
@@ -17,19 +16,29 @@ const Products = ({ProductsRendering, active}: IProps) => {
 
     const handleClick= (index: number) => {
         console.log(index)
-        const slider = Category[index]
+        const slider = ProductsRendering[index]
         setAddImg(slider)
     }
 
+
     return (
+        <>
+            <C.BoxImg>
+                <C.img>
+                    <img src={addImg.img} alt={addImg.name} /> 
+                     <span>{addImg.name}</span>
+                </C.img>
+            </C.BoxImg>
             <C.Container active={active}> 
                     {ProductsRendering.map((item, index) => (
                     <C.Box key={item.id}> 
-                            <Button onClick={() => handleClick(item.id)} type='button'>{item.img}</Button>
+                            <img onClick={() => handleClick(index)} src={item.img} alt={item.name} />
                             <span>{item.name}</span>
                         </C.Box>
                     ))}
             </C.Container>
+
+        </>
     )
 }
 

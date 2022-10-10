@@ -3,7 +3,7 @@ import {BsDoorClosed} from 'react-icons/bs'
 export const ProductsRender = [
     {
         id: 1,
-        img: <BsDoorClosed/>,
+        img: "Assets/img/PortaAco.png",
         name: "Porta",
         category: {
             id: 1,
@@ -12,7 +12,7 @@ export const ProductsRender = [
     },
     {
         id: 2,
-        img: <BsDoorClosed/>,
+        img: "Assets/img/PortaMadeira.png",
         name: "Porta",
         category: {
             id: 1,
@@ -21,8 +21,8 @@ export const ProductsRender = [
     },
     {
         id: 3,
-        img: <BsDoorClosed/>,
-        name: "Porta2",
+        img: "Assets/img/Wall-lisa.jpg",
+        name: "Parede lisa",
         category: {
             id: 2,
             label: "Doors"
@@ -30,8 +30,8 @@ export const ProductsRender = [
     },
     {
         id: 4,
-        img: <BsDoorClosed/>,
-        name: "Porta2",
+        img: "Assets/img/Wall-tijolo.jpg",
+        name: "Parede de tijolo",
         category: {
             id: 2,
             label: "Doors"
@@ -39,7 +39,7 @@ export const ProductsRender = [
     },
     {
         id: 5,
-        img: <BsDoorClosed/>,
+        img: "Assets/img/PortaAco.png",
         name: "Porta3",
         category: {
             id: 3,
@@ -48,7 +48,7 @@ export const ProductsRender = [
     },
     {
         id: 6,
-        img: <BsDoorClosed/>,
+        img: "Assets/img/PortaAco.png",
         name: "Porta4",
         category: {
             id: 4,

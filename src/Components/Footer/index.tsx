@@ -1,5 +1,6 @@
 import * as C from './style'
 import {BsDoorClosed} from 'react-icons/bs'
+import {GiBrickWall} from 'react-icons/gi'
 import Products from './Products'
 import { useState } from 'react'
 import { ProductsRender } from 'Mock/Products'
@@ -12,7 +13,7 @@ export const Category = [
 
     {
         id: 2,
-        icon: <BsDoorClosed/>
+        icon: <GiBrickWall/>
     },
 
     {
@@ -50,21 +51,20 @@ export const Footer = () => {
         <>
         <C.Footer>
             <C.Box>
-                {Category.map((item) => (
+                {Category.map((item: any) => (
                     <C.Button
                         key={item.id}
                         type='button'
                         active={active === item.id ? true : false}
-                        onClick={() => filtered(item)}
+                        onClick={() => filtered({...item})}
                     >
                         {item.icon}
                     </C.Button>
-                
                 ))}
             </C.Box>  
         </C.Footer>
         
-        <Products active={active} ProductsRendering={filterSalles}/>
+        <Products active={active} ProductsRendering={filterSalles} />
         
         </>
     )
