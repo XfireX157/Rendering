@@ -1,10 +1,16 @@
-import { Footer } from "Components/Footer";
+import Header from "Components/Header";
+import Rodape from "Components/Rodape";
 
 function Home() {
     return (
+      <>
       <div>
-        <Footer/>
+        <Header />
       </div>
+      <div>
+        <Rodape/>
+      </div>
+      </>
     );
   }
   
